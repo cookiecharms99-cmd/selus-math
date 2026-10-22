@@ -1,0 +1,13 @@
+# Ignore everything!
+*
+
+# Do not ignore directories!
+!*/
+
+# Do not ignore actual work
+
+!*.c
+!*.cpp
+!*.md
+!.gitignore
+
