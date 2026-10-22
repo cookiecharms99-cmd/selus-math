@@ -8,6 +8,7 @@
 
 !*.c
 !*.cpp
+!*.hpp
+!*.h
 !*.md
 !.gitignore
-
