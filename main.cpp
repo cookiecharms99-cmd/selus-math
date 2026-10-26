@@ -2,10 +2,12 @@
 #include <iostream>
 
 int main() {
-  Vector v1(3);
-  v1[0] = 1;
-  v1[1] = 2;
-  v1[2] = 3;
-  std::cout << "||v1||^2 = " << v1.squared_norm() << "!\n";
-  return 0;
+  Vector v1{{
+      1,
+      2,
+      3,
+  }};
+  Vector v2{{4, 5, 6}};
+  v1.print_vector();
+  std::cout << "v1 . v1 = " << dot(v1, v1) << "\n";
 }
