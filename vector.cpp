@@ -8,7 +8,7 @@ double &Vector::operator[](std::size_t idx) { return elements[idx]; }
 const double &Vector::operator[](std::size_t idx) const {
   return elements[idx];
 }
-bool Vector::operator==(const Vector &other) {
+bool Vector::operator==(const Vector &other) const {
   return elements == other.elements;
 }
 // With vectors -------------

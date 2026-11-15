@@ -1,3 +1,5 @@
+#ifndef vector_hpp
+#define vector_hpp
 #include <initializer_list>
 #include <iostream>
 #include <stdexcept>
@@ -11,7 +13,7 @@ public:
   double &operator[](std::size_t idx);
   const double &operator[](std::size_t idx) const;
   // Equivalence operator
-  bool operator==(const Vector &other);
+  bool operator==(const Vector &other) const;
 
   Vector &operator+=(const Vector &other);
   Vector &operator-=(const Vector &other);
@@ -71,3 +73,8 @@ Vector operator/(Vector v, double scalar);
 
 // ------------------------------------------------------------------
 double dot(const Vector &v1, const Vector &v2);
+
+// ----------- Matrix Object
+//
+
+#endif
