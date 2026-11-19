@@ -2,6 +2,8 @@
 #include <cassert>
 #include <iostream>
 #include <stdexcept>
+
+using selus::Vector;
 int main() {
 
   // Test vector size!
@@ -12,7 +14,7 @@ int main() {
 
   // Test vector operations (use integers :o)
   v1 = {1, 2, 3};
-  Vector v2{4, 5, 6};
+  Vector v2{4.0, 5.0, 6.0};
   Vector v3{3, 6, 9};
 
   double scalar{2};

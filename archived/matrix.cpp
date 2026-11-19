@@ -115,7 +115,7 @@ Matrix &Matrix::elem_mul(const Matrix &other) {
     throw std::invalid_argument("eep dimension mismatch!");
   }
   for (std::size_t idx{0}; idx < n_rows * n_cols; ++idx) {
-    this->elements[idx] -= other.elements[idx];
+    this->elements[idx] *= other.elements[idx];
   }
   return *this;
 }
